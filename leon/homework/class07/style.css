@@ -1,0 +1,66 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header, 
+section, 
+footer {
+	border: 2px solid black;
+}
+
+header,
+footer {
+	height: 100px;
+}
+
+section {
+	width: 33.3333%;
+	height: 200px;
+	float: left;
+}
+
+footer {
+	clear: both;
+}
+
+/***************************************
+ * Media Queries
+ * *************************************/
+
+	@media screen and (min-width: 800px) and (max-width: 1000px) {
+
+		section.cont-1,
+		section.cont-2 {
+			width: 50%;
+		}
+
+		section.cont-3 {
+			width: 100%;
+			height: 100px;
+
+
+	}
+
+	@media screen and (min-width: 600px) and (max-width: 800px) {
+
+		section.cont-1,
+		section.cont-2,
+		section.cont-3 {
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+
+		section.cont-1,
+		section.cont-2
+		{
+			width: 100%;
+			height: 300px;
+		}
+		section.cont-3 {
+			display: none;
+		}
+	}
