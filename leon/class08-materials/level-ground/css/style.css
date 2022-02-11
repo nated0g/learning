@@ -1,0 +1,156 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	font-family: Helvetica;	
+	font-weight: 100;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	text-transform: uppercase;
+	font-family: Impact;
+	font-weight: normal;
+}
+
+ul {
+	margin: 0;
+	list-style-type: none;
+	width: 20%;
+	float: left;
+}
+
+
+.col-1-2 {
+	width: 50%;
+	float: right;
+	padding: 0 10px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+	width: 100%;
+	display: block;
+	background: #66768A;
+	color: white;
+	text-align: center;
+}
+
+header nav,
+#why div,
+#visit div,
+#volunteer div,
+footer div {
+	display: inline-block;
+	width: 1024px;
+}
+
+nav li,
+nav .btn {
+	float: left;
+	padding: 25px 8px;
+}
+
+nav .logo {
+	width: 70%;
+	float: left;
+}
+main section {
+	width: 1024px;
+	display: inline-block;
+	padding: 100px;
+}
+
+#why,
+#visit,
+#volunteer {
+	text-align: center;
+}
+
+#why div,
+#visit div,
+#volunteer div{
+	padding: 100px;
+}
+
+#why p,
+#volunteer p{
+	padding: 0 80px;
+}
+
+#why h2,
+#volunteer h2 {
+	text-transform: uppercase;
+}
+
+#visit img {
+	height: 175px;
+	background: #66768A;
+	width: 300px;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+main {
+	color: white;
+	text-align: center;
+}
+
+main h1 {
+	text-transform: uppercase;
+	font-size: 2.9em;
+
+}
+main p {
+	padding: 50px 10px;
+}
+main {
+	background: #66768A;
+}
+#visit {
+	background: #DBDFE2;
+}
+footer {
+	background: #161F2A;
+	height: 240px;
+}
+#visit h3 {
+	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+
+nav a {
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
