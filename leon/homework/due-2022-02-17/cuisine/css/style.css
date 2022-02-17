@@ -1,0 +1,366 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color: black;
+}
+
+.col-1-4 {
+	float: left;
+	width: 22.5%;
+}
+.col-1-2 {
+	float: left;
+	width: 50%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h1, h2, h3 {
+	font-family: Georgia, Times, serif;
+}
+h5 {
+	color: #FF8800; 
+	margin: 0;
+	font-weight: 500;
+	padding-top: 90px;
+	font-size: 1.1rem;
+}
+h2 {
+	font-size: 3.4rem;
+}
+/******************************************
+/* Nav
+/*******************************************/
+
+nav > ul {
+	float: right;
+	list-style-type: none;
+	padding-right: 10%;
+}
+
+nav > ul > li {
+	display: inline-block;
+	padding-left: 25px;
+}
+nav i {
+	padding-left: 30px;
+}
+/******************************************
+/* Hero
+/*******************************************/
+
+header {
+	padding-left: 10%;
+	background: url("../assets/headbg.jpg");
+	background-position: top;
+	background-size: cover;
+}
+.hero h1 {
+	margin-top: 150px;
+	font-size: 4.1rem;
+	line-height: 5.2rem;
+}
+.hero {
+	padding-right: 45%;
+}
+.hero ul {
+	list-style-type: none;
+	padding: 50px 0 200px 0;
+	padding-top: 50px;
+	height: 30px;
+	margin: 0;
+}
+
+.hero ul li {
+	display: inline-block;
+}
+
+.social {
+	padding-right: 10%;	
+	padding-left: 15px;
+	line-height: 30px;
+	font-weight: bold;
+
+}
+.social i {
+	color: #FD8700;
+	font-size: 1.2rem;
+	padding-right: 5px;
+	line-height: 30px;
+}
+.hero form {
+	box-shadow: 8px 10px 20px 10px rgba(0, 0, 0, .05);
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+.hero input[type="text"] {
+	width: 360px;
+	height: 45px;
+	padding: 12px 0 10px 35px;
+	border: 1px solid #DFDFEB;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-size: 1.2rem;
+	background: url("../assets/search-icon.png") no-repeat scroll 9px 9px #F3F9F9;
+	margin: 0;
+}
+::placeholder {
+	color: #D2D2D2;
+	font-size: 0.9rem;
+}
+
+.hero select {
+	height: 45px;
+	border: 1px solid #FF8800;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background: #FF8800;
+	padding: 10px 25px;
+	font-size: 0.8rem;
+	color: white;
+	appearance: none;
+	position: relative;
+	top: -3px;
+	margin: 0;
+}
+
+/******************************************
+/* Main
+/*******************************************/
+main {
+	background-image: url(../assets/mainbg.jpg);
+	background-size: cover;
+	background-position: center;
+	margin: 0;
+	padding: ;
+	padding-bottom: 150px;
+}
+main section {
+	margin-left: 40%;
+	margin-right: 15%;
+}
+
+main h2 {
+	padding-right: 20%;
+	margin: 10px 0;
+}
+
+main p {
+	line-height: 1.8rem;
+	text-align: justify;
+}
+
+.btn div {
+	display: inline-block;
+	padding: 15px;
+	color: white;
+	font-size: .9rem;
+
+}
+.btn div:first-child {
+	background: #FF8800;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.btn div:last-child {
+	background: #FFAA4D;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.btn {
+	display: block;
+	margin-top: 50px;
+}
+/******************************************
+/* Menu
+/*******************************************/
+
+.menu {
+	text-align: center;
+	padding: 0 10%;
+	background: #F2F6F7;
+}
+
+.menu h2 {
+	margin: 15px 0 35px 0;
+}
+.menu ul {
+	list-style-type: none;
+}
+.menu ul li {
+	display: inline-block;
+	padding:15px 35px;
+	border-bottom: 2px solid #E0E3E4;
+}
+
+.menu ul li:hover {
+	border-bottom: 2px solid #FF8800;
+}
+
+.menu ul li a:hover {
+	color: #FF8800;
+}
+
+.menuItem {
+	height: 400px; 
+	color: white;
+	background-size: cover;
+	background-clip: content-box;
+
+}
+
+.menuItemWrap {
+
+	margin: 1.25%;
+	margin-top: 30px;
+	background: #000;
+}
+.menuItem:hover {
+	opacity: 0.6;
+}
+
+.item1 {
+	background-image: url('../assets/contadina.jpg');
+}
+.item2 {
+	background-image: url('../assets/shrimp-something.png');
+}
+.item3 {
+	background-image: url('../assets/chicken-n-bread.png');
+}
+.item4 {
+	background-image: url('../assets/egg-avacado-toast.png');
+}
+.item5 {
+	background-image: url('../assets/egg-grilled-chicken.PNG');
+}
+.item6 {
+	background-image: url('../assets/egg-spinach.PNG');
+}
+.item7 {
+	background-image: url('../assets/grilled-tomato.png');
+}
+.item8 {
+	background-image: url('../assets/mystery.PNG');
+}
+
+.dots {
+	clear: both;
+	display: inline-block;
+	margin: 18px 0 35px 0; 
+}
+/******************************************
+/* Hours
+/*******************************************/
+.hours {
+	background-image: linear-gradient(to right, rgba(222, 227, 233, .8), rgba(255, 255, 255, .8)), url('../assets/book-tables-background.jpg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	padding:0 20%;
+}
+
+.hours h2 {
+	margin-top: 15px;
+}
+.hours h4 {
+	margin-top: 10px;
+	font-family: Georgia, Times, serif;
+	font-size: 1.7rem;
+}
+
+.hours section {
+	text-align: left;
+	padding: 30px;
+}
+.hours span {
+	display: block;
+	font-weight: bold;
+}
+.hours section+section {
+	padding-left: 120px;
+	padding-right: 10px;
+}
+.hours .video {
+	padding: 9;
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin-bottom: 100px;
+	
+}
+
+.hours h3 {
+	margin-top: 15px;
+	color: #FF8800;
+	font-size: 2.2rem;
+}
+.hours .icon {
+	display: inline-block;
+	padding: 10px;
+	font-size: 1.8rem;
+	color: #FF8800;
+	border: 1px solid #FF8800;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	margin: 20px;
+}
+/******************************************
+/* Testimonials
+/*******************************************/
+
+.testimonials {
+	text-align: center;
+	padding: 0 10%;
+	background-image: linear-gradient(to right, rgb(222, 227, 233), rgb(255, 255, 255));
+}
+
+.testimonials h4 {
+	font-size: 1.6rem;
+	margin: 10px 0;
+}
+
+.testimonials span {
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.testimonials img {
+	display: inline-block;
+}
+.testimonials p {
+	padding: 10px 10%;
+	line-height: 2rem;
+}
