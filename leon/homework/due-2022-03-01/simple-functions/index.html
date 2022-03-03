@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
+
+	<title>Simple Functions Homework</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<form onsubmit="return false;">
+
+		<fieldset class="container">
+			<fieldset class="calc">
+				<legend>Sum and Alert</legend>
+				<input type="text" id="sumA"></input>
+				<input type="text" id="sumB"></input>
+				<button id="sum">Sum it, man!</button>
+			</fieldset>
+			<fieldset class="calc">
+				<legend>Console Log Product</legend>
+				<input type="text" id="prodA"></input>
+				<input type="text" id="prodB"></input>
+				<input type="text" id="prodC"></input>
+				<button id="prod">Lets multiply!</button>
+			</fieldset>
+			<fieldset class="calc">
+				<legend>Modulus</legend>
+				<input type="text" id="modA"></input>
+				<input type="text" id="modB"></input>
+				<button id="mod">Get Remainder</button>
+			</fieldset>
+		</fieldset>
+	</form>
+	<div id="modResult">
+		<button id="closeModResult">×</button>
+		<div id="modResultText">
+			0
+		</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

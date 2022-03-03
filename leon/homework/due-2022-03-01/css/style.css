@@ -1,0 +1,65 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  text-align: center;
+  background: #81a1c1;
+  font-family: Consolas;
+}
+
+ul {
+  position: absolute;
+  list-style-type: none;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+li>a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  height: 100%;
+  text-decoration: none;
+  color: #a3be8a;
+}
+li {
+  text-align: left;
+  border: 1px solid black;
+  margin: 30px;
+  position: relative;
+  box-shadow: 5px 5px rgba(0,0,0,.6);
+  background: #2e3440;
+  transition: all 0.2s ease;
+  top: 0px;
+}
+a:hover {
+  color: #ebcb8b;
+  transition: all 0.2s ease;
+}
+li:hover {
+  background: #3b4252;
+  box-shadow: 5px 10px 3px rgba(0,0,0,.7);
+  transition: all 0.2s ease;
+  top: -5px;
+}
+li:nth-child(even) {
+  left: 10px;
+}
+li:nth-child(odd) {
+  left: -10px;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
