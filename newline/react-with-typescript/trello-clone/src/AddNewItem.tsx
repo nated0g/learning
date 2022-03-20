@@ -4,13 +4,13 @@ import { NewItemForm } from "./NewItemForm";
 
 type AddNewItemProps = {
   onAdd(text: string): void
-  toggleButttonText: string
+  toggleButtonText: string
   dark?: boolean
 }
 
 export const AddNewItem = (props: AddNewItemProps) => {
   const [showForm, setShowForm] = useState(false)
-  const { onAdd, toggleButttonText, dark } = props
+  const { onAdd, toggleButtonText, dark } = props
 
   if (showForm) {
     return (
@@ -25,7 +25,7 @@ export const AddNewItem = (props: AddNewItemProps) => {
 
   return (
     <AddItemButton dark={dark} onClick={() => setShowForm(true)}>
-      {toggleButttonText}
+      {toggleButtonText}
     </AddItemButton>
   )
 }

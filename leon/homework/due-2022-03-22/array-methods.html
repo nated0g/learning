@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript.Info Array Methods Tasks</title>
+</head>
+
+<body>
+  <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
+  <a href="https://javascript.info/array-methods">From here</a>
+  <script>
+
+    // Border-left-width to borderLeftWidth
+
+    const camelize = (str) => {
+      let arr = str.split('-')
+      let newStr = arr
+        .map((w, i) => {
+          if (w[0] && i != 0) {
+            return w[0].toUpperCase() + w.slice(1);
+          }
+          return w
+        })
+        .join('')
+      return newStr
+    }
+
+    console.log('camelize:', camelize('border-left-width'))
+
+    // FILTER RANGE
+    const filterRange = (arr, a, b) => {
+      return arr.filter((e) => e >= a && e <= b);
+    }
+    let arr = [5, 3, 8, 1];
+    let filtered = filterRange(arr, 1, 4);
+    console.log('filtered:', filtered); // 3,1 (matching values)
+    console.log('filtered, original: ', arr); // 5,3,8,1 (not modified)
+
+    // Filter range "in place"
+    let arr2 = [5, 3, 8, 1];
+    const filterRangeInPlace = (arr, a, b) => {
+      arr.forEach((e, i) => {
+        if (e <= a || e >= b) arr.splice(i, 1);
+      })
+    }
+    filterRangeInPlace(arr2, 1, 4); // removed the numbers except from 1 to 4
+    console.log("filterRangeInPlace: ", arr2); // [3, 1]
+
+    // Sort in descreasing order
+    let arr3 = [5, 2, 1, -10, 8];
+    arr3.sort((a, b) => b - a);
+    console.log('Sort in decreasing order:', arr3);
+
+    // Copy and sort array
+    let arr4 = ["HTML", "JavaScript", "CSS"];
+
+    const copySorted = (arr) => [...arr].sort();
+
+    let sorted = copySorted(arr4);
+    console.log('sorted:', sorted); // 3,1 (matching values)
+    console.log('sorted, original: ', arr4); // 5,3,8,1 (not modified)
+
+    class Calculator {
+      constructor() {
+        this.methods = {
+          "+": (a,b) => a + b,
+          "-": (a,b) => a - b
+        };
+      }
+      calculate(str) {
+        let tokens = str.split(' ');
+        return this.methods[tokens[1]](tokens[0], tokens[2]);
+      }
+      addMethod(operator, cb) {
+        this.methods[operator] = cb;
+      }
+    }
+
+    let powerCalc = new Calculator;
+    powerCalc.addMethod("*", (a, b) => a * b);
+    powerCalc.addMethod("/", (a, b) => a / b);
+    powerCalc.addMethod("**", (a, b) => a ** b);
+
+    let result = powerCalc.calculate("2 ** 3");
+    console.log("Calculator: ", result); // 8
+
+  </script>
+</body>
+
+</html>

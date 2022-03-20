@@ -9,7 +9,7 @@ class LinkedListNode {
 }
 
 
-class LinkedList {
+export default class LinkedList {
   constructor() {
     /** @var LinkedListNode */
     this.head = null;
@@ -142,13 +142,3 @@ class LinkedList {
     return this.toArray().map(node => node.toString(callback)).toString();
   }
 }
-
-let test = ['a', 'b', 'c', 'd', 'e', 'f'];
-
-let list = new LinkedList();
-test.forEach(i => {
-  list.append(i);
-})
-
-console.log(list);
-console.log(list.toString());
