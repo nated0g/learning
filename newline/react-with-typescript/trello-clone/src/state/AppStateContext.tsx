@@ -4,6 +4,7 @@ import { Action } from "./actions";
 import { useImmerReducer } from "use-immer";
 
 const appData: AppState = {
+  draggedItem: null,
   lists: [
     {
       id: "0",

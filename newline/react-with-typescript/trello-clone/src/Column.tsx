@@ -3,6 +3,7 @@ import { Card } from "./Card";
 import { AddNewItem } from "./AddNewItem";
 import { useAppState } from "./state/AppStateContext";
 import { addTask } from "./state/actions";
+// TODO: https://www.newline.co/books/fullstack-react-with-typescript/your-first-react-and-typescript-application-building-trello-with-drag-and-drop#drag-column
 
 type ColumnProps = {
   text: string
