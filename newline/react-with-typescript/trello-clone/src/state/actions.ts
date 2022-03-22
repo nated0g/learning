@@ -13,7 +13,7 @@ export type Action = {
   type: "SET_DRAGGED_ITEM"
   payload: DragItem | null
 }
-
+// TODO: https://www.newline.co/books/fullstack-react-with-typescript/your-first-react-and-typescript-application-building-trello-with-drag-and-drop#drag-cards
 export const addTask = (text: string, listId: string): Action => ({
   type: "ADD_TASK",
   payload: {
